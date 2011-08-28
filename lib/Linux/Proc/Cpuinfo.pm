@@ -4,7 +4,7 @@ use 5.006000;
 use strict;
 use warnings;
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 require XSLoader;
 XSLoader::load( 'Linux::Proc::Cpuinfo', $VERSION );
