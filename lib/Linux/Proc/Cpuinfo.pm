@@ -68,19 +68,19 @@ be set to C<undef>.
 
 Returns the CPU clock speed in MHz. If the C</proc/cpuinfo> file does not list
 the clock speed or if the library fails to recognise the clock speed, then this
-value defaults to C<0>.
+value defaults to C<undef>.
 
 =head2 C<bogomips>
 
-Returns the BogoMips as calculated by the kernel. BogoMips defaults to C<0> if
-the C</proc/cpuinfo> file does not list the BogoMips or if the library fails to
-recognise the BogoMips.
+Returns the BogoMips as calculated by the kernel. BogoMips defaults to C<undef>
+if the C</proc/cpuinfo> file does not list the BogoMips or if the library fails
+to recognise the BogoMips.
 
 =head2 C<cache>
 
 Returns the amount of L2 cache in kilobytes. If the C</proc/cpuinfo> file does
 not list the amount of L2 cache or if the library fails to recognise the amount
-of L2 cache, then the value defaults to C<0>.
+of L2 cache, then the value defaults to C<undef>.
 
 =head2 C<cpus>
 
