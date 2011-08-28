@@ -114,6 +114,10 @@ update it here.
 
 =back
 
+=head1 ACKNOWLEDGEMENT
+
+Tim Heaney - reported missing dependency C<Devel::CheckLib>
+
 =head1 AUTHOR
 
 Alan Haggai Alavi <alanhaggai@alanhaggai.org>

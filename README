@@ -41,17 +41,17 @@ METHODS
   "frequency"
     Returns the CPU clock speed in MHz. If the "/proc/cpuinfo" file does not
     list the clock speed or if the library fails to recognise the clock
-    speed, then this value defaults to 0.
+    speed, then this value defaults to "undef".
 
   "bogomips"
-    Returns the BogoMips as calculated by the kernel. BogoMips defaults to 0
-    if the "/proc/cpuinfo" file does not list the BogoMips or if the library
-    fails to recognise the BogoMips.
+    Returns the BogoMips as calculated by the kernel. BogoMips defaults to
+    "undef" if the "/proc/cpuinfo" file does not list the BogoMips or if the
+    library fails to recognise the BogoMips.
 
   "cache"
     Returns the amount of L2 cache in kilobytes. If the "/proc/cpuinfo" file
     does not list the amount of L2 cache or if the library fails to
-    recognise the amount of L2 cache, then the value defaults to 0.
+    recognise the amount of L2 cache, then the value defaults to "undef".
 
   "cpus"
     Returns the total number of processors detected. On systems that list
@@ -80,6 +80,9 @@ INSTALLING "libproccpuinfo"
 
         Please send me information on how to install it on other systems and
         I will update it here.
+
+ACKNOWLEDGEMENT
+    Tim Heaney - reported missing dependency "Devel::CheckLib"
 
 AUTHOR
     Alan Haggai Alavi <alanhaggai@alanhaggai.org>
