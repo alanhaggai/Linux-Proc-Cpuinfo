@@ -23,11 +23,7 @@ WriteMakefile(
     'LICENSE'  => 'perl',
     'META_ADD' => {
         'resources' => {
-            'repository' => {
-                'type' => 'git',
-                'url'  => 'git://github.com/alanhaggai/Linux-Proc-Cpuinfo.git',
-                'web'  => 'http://github.com/alanhaggai/Linux-Proc-Cpuinfo',
-            }
+            'repository' => 'http://github.com/alanhaggai/Linux-Proc-Cpuinfo',
         },
     },
 );
